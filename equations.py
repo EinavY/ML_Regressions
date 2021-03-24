@@ -30,7 +30,7 @@ def Ln(x:float) -> float:
     epsilon = 0.001
     s = yn-yn1
     while s > epsilon:
-        yn1 = yn + (2*((x-exponent(yn))/(x+exponent(yn))))
+        yn1 = yn + 2*((x-exponent(yn))/(x+exponent(yn)))
         s = yn1 - yn
         yn = yn1
         if s < 0:
