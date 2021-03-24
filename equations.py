@@ -36,19 +36,18 @@ def Ln(x:float) -> float:
         if s < 0:
             s = -s
     return yn1
-def XtimesY (x:float, y:float) -> float:
-    if x <= 0:
+def XtimesY(x:float , y:float)->float:
+    if x<=0:
         return 0
-    z =  float('%0.6f' % exponent(y*Ln(x)))
-    return z
-def sqrt(x:float,y:float):
+    return float('%0.6f' % exponent(y*Ln(x)))
+
+def sqrt(x:float,y:float) -> float:
     if x ==	0 or y<0:
         return 0
-    z = XtimesY (x,1/y)
-    return z
+    return XtimesY(y, 1/x)
+
 def calculate(x:float) -> float:
-    z = exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x)
-    return z
+    return exponent(x)*XtimesY(7, x)*XtimesY(x, -1)*sqrt(x,x)
     
     
     
