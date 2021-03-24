@@ -42,7 +42,7 @@ def XtimesY (x:float, y:float) -> float:
     z =  float('%0.6f' % exponent(y*Ln(x)))
     return z
 def sqrt(x:float,y:float):
-    if y<=0:
+    if x ==	0 or y<0:
         return 0
     z = XtimesY (x,1/y)
     return z
